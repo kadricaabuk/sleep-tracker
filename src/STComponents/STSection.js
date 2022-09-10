@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const YGSection = ({
+const STSection = ({
     children,
     title,
     titlePosition = "inside",
@@ -14,7 +14,7 @@ const YGSection = ({
 
     const Section = styled("div")`
         position: relative;
-        background-color: var(--yg-section-background);
+        background-color: var(--st-section-background);
         border-radius: 13px;
         width: ${sectionWidth ? sectionWidth : "100%"};
         height: ${sectionHeight ? sectionHeight : "fit-content"};
@@ -49,4 +49,4 @@ const YGSection = ({
 
 }
 
-export default YGSection
+export default STSection

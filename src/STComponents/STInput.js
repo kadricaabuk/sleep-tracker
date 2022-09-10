@@ -2,7 +2,7 @@ import { PureComponent, memo } from "react"
 import { IonInput } from "@ionic/react"
 
 import styled from "styled-components"
-import Icon from "./YGIcon"
+import STIcon from "./STIcon"
 
 class Input extends PureComponent {
   render() {
@@ -23,26 +23,26 @@ class Input extends PureComponent {
       ...inputProps
     } = this.props
 
-    const YGInputWrapper = styled("div")`
+    const STInputWrapper = styled("div")`
       position: relative;
       flex-shrink: 0;
       width: 100%;
       ${margin ? "margin: " + margin + ";" : ""}
 
       &.shake .native-input {
-        border-color: var(--yg-purple);
+        border-color: var(--st-purple);
       }
       &.success .native-input {
-        border-color: var(--yg-success);
+        border-color: var(--st-success);
       }
       &.error .native-input {
-        border-color: var(--yg-error);
+        border-color: var(--st-error);
       }
       &.warning .native-input {
-        border-color: var(--yg-warning);
+        border-color: var(--st-warning);
       }
       &.info .native-input {
-        border-color: var(--yg-info);
+        border-color: var(--st-info);
       }
 
       &.icon-left .native-input {
@@ -54,11 +54,11 @@ class Input extends PureComponent {
       }
     `
 
-    const YGInput = styled(IonInput)`
+    const STInput = styled(IonInput)`
       height: 100%;
       width: 100%;
       flex-shrink: 0;
-      font-family: var(--yg-font-family);
+      font-family: var(--st-font-family);
 
       .native-input {
         flex-shrink: 0;
@@ -66,7 +66,7 @@ class Input extends PureComponent {
         height: 100%;
         width: 100%;
         padding: 0 15px;
-        border: 1px solid var(--yg-border-light);
+        border: 1px solid var(--st-border-light);
         border-radius: 4px;
         background-color: transparent;
         color: #000;
@@ -82,7 +82,7 @@ class Input extends PureComponent {
       }
 
       .native-input:focus {
-        border-color: var(--yg-purple);
+        border-color: var(--st-purple);
       }
 
       .icon-${icon} {
@@ -94,10 +94,10 @@ class Input extends PureComponent {
       }
 
       &.has-value .icon-${icon} {
-        fill: var(--yg-link);
+        fill: var(--st-link);
       }
       &.has-value .native-input {
-        border-color: var(--yg-link);
+        border-color: var(--st-link);
       }
 
       ${theme === "primary"
@@ -106,7 +106,7 @@ class Input extends PureComponent {
           height: 55px;
           width: 100%;
           background-color: #fff;
-          border: 1px solid var(--yg-primary-300);
+          border: 1px solid var(--st-primary-300);
           border-radius: 12px;
           transition: all 0.15s ease-out;
 
@@ -117,7 +117,7 @@ class Input extends PureComponent {
             background-color: #fff;
             border: none;
             border-radius: 12px;
-            color: var(--yg-primary);
+            color: var(--st-primary);
             font-size: 16px;
             font-weight: 400;
             text-align: left;
@@ -125,10 +125,10 @@ class Input extends PureComponent {
 
           &.has-focus,
           &.has-value {
-            border-color: var(--yg-primary);
+            border-color: var(--st-primary);
           }
 
-          .YGInputLabel {
+          .STInputLabel {
             pointer-events: none;
             position: absolute;
             top: 50%;
@@ -140,8 +140,8 @@ class Input extends PureComponent {
             transition: all 0.1s ease-out;
             z-index: 1;
           }
-          &.has-focus .YGInputLabel,
-          &.has-value .YGInputLabel {
+          &.has-focus .STInputLabel,
+          &.has-value .STInputLabel {
             top: -6px;
             transform: translateY(-100%);
             color: #635c5c;
@@ -175,12 +175,12 @@ class Input extends PureComponent {
     const generateID = idGenerator()
 
     return (
-      <YGInputWrapper
+      <STInputWrapper
         className={`input-wrapper${cssClass ? " " + cssClass : ""}`}
       >
-        <YGInput id={id ? id : generateID} {...inputProps}>
+        <STInput id={id ? id : generateID} {...inputProps}>
           {icon ? (
-            <Icon
+            <STIcon
               name={icon}
               fill={iconFill ? iconFill : "#a2a2a2"}
               size={iconSize ? iconSize : 24}
@@ -191,15 +191,15 @@ class Input extends PureComponent {
             ""
           )}
           {label ? (
-            <label htmlFor={id ? id : generateID} className="YGInputLabel">
+            <label htmlFor={id ? id : generateID} className="STInputLabel">
               {label}
             </label>
           ) : (
             ""
           )}
           {children}
-        </YGInput>
-      </YGInputWrapper>
+        </STInput>
+      </STInputWrapper>
     )
   }
 }

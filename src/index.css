@@ -9,3 +9,9 @@ body {
 *{
   margin: 0;
 }
+
+.ion-tab-bar{
+  background-color: black;
+  color: white;
+  height: 50px;
+}

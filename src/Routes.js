@@ -1,7 +1,7 @@
 import { IonRouterOutlet } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Redirect, Route, Switch } from "react-router-dom";
-import {Home, NotFound} from './pages'
+import {NotFound, TabsPage} from './pages'
 
 const GuardedRoute = ({ path, render, ...props }) => {
 //   const {token, pin} = useSelector((state) => state.userSlice);
@@ -15,7 +15,7 @@ const Routes = () => {
     <IonReactRouter>
       <IonRouterOutlet>
         <Switch>
-          <GuardedRoute exact path="/" render={() => <Home />}/>
+          <GuardedRoute exact path="/" render={() => <TabsPage />}/>
           <Route path={"*"} render={() => <NotFound />} />
         </Switch>
       </IonRouterOutlet>

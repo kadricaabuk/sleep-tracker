@@ -2,6 +2,8 @@
   "name": "sleep-tracker",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
+  "homepage": ".",
   "dependencies": {
     "@capacitor/android": "^4.2.0",
     "@capacitor/app": "4.0.1",

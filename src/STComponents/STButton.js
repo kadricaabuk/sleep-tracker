@@ -6,7 +6,7 @@ import { IonButton } from "@ionic/react"
 import styled from "styled-components"
 
 // Components
-import Icon from "./YGIcon"
+import Icon from "./STIcon"
 
 export default class Button extends Component {
   render() {
@@ -31,7 +31,7 @@ export default class Button extends Component {
       ...buttonProps
     } = this.props
 
-    const YGButton = styled(IonButton)`
+    const STButton = styled(IonButton)`
       --background-focused: unset;
       --background-activated: unset;
       --background-hover: unset;
@@ -262,7 +262,7 @@ export default class Button extends Component {
     `
 
     return (
-      <YGButton
+      <STButton
         className={`${
           theme ? " theme-button-" + theme : "theme-button-primary"
         } ${cssClass ? cssClass : ""}`}
@@ -297,7 +297,7 @@ export default class Button extends Component {
         ) : (
           ""
         )}
-      </YGButton>
+      </STButton>
     )
   }
 }

@@ -1,6 +1,6 @@
 import Icons from "../assets/icons.svg"
 
-const Icon = ({ name, fill, size, height, width, margin, cssClass, style, ...props }) => (
+const STIcon = ({ name, fill, size, height, width, margin, cssClass, style, ...props }) => (
   <svg
     className={`icon icon-${name}${cssClass ? " " + cssClass : ""}`}
     fill={fill ? fill : "currentColor"}
@@ -13,4 +13,4 @@ const Icon = ({ name, fill, size, height, width, margin, cssClass, style, ...pro
   </svg>
 )
 
-export default Icon
+export default STIcon

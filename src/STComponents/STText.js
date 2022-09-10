@@ -20,7 +20,7 @@ class Text extends Component {
       ...props
     } = this.props
 
-    const YGText = styled("div")`
+    const STText = styled("div")`
       display: inline;
       ${margin ? "margin: " + margin + " !important;" : ""}
 
@@ -42,9 +42,9 @@ class Text extends Component {
     `
 
     return (
-      <YGText className={`Text${cssClass ? " " + cssClass : ""}`} {...props}>
+      <STText className={`Text${cssClass ? " " + cssClass : ""}`} {...props}>
         {children}
-      </YGText>
+      </STText>
     )
   }
 }
