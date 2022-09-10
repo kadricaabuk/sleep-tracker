@@ -1,1 +1,1 @@
-# yoga-app
+# Yoga App
