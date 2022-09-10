@@ -1,14 +1,14 @@
 :root {
-  /** YOGA app CSS Variables **/
+  /** Sleep Tracker CSS Variables **/
 
-  --yg-tabbar-height: 59px;
+  --st-tabbar-height: 59px;
 
   /* Padding */
-  --yg-page-padding: 22px;
-  --yg-page-background: #000;
-  --yg-background: #fff;
-  --yg-section-background: #F0F4FF;
-  --yg-linear-gradient: linear-gradient(
+  --st-page-padding: 22px;
+  --st-page-background: #000;
+  --st-background: #fff;
+  --st-section-background: #F0F4FF;
+  --st-linear-gradient: linear-gradient(
     52.7deg,
     #64257f -5.64%,
     #56589c 54.97%,
@@ -18,38 +18,38 @@
   );
 
   /* Colors */
-  --yg-light: #efefef;
-  --yg-dark: #635c5c;
+  --st-light: #efefef;
+  --st-dark: #635c5c;
 
-  --yg-border: #d1d0e3;
-  --yg-border-light: #e3e3e3;
+  --st-border: #d1d0e3;
+  --st-border-light: #e3e3e3;
 
-  --yg-primary-dark: #151e34;
-  --yg-primary: #353355;
-  --yg-primary-light: #9a99aa;
-  --yg-secondary: #8a8e99;
-  --yg-pink: #b11d94;
-  --yg-pink-2: #f01b74;
-  --yg-purple: #83819e;
-  --yg-purple-2: #dbdbe2;
-  --yg-purple-3: #edecf4;
-  --yg-link: #79778e;
+  --st-primary-dark: #151e34;
+  --st-primary: #353355;
+  --st-primary-light: #9a99aa;
+  --st-secondary: #8a8e99;
+  --st-pink: #b11d94;
+  --st-pink-2: #f01b74;
+  --st-purple: #83819e;
+  --st-purple-2: #dbdbe2;
+  --st-purple-3: #edecf4;
+  --st-link: #79778e;
 
-  --yg-green: #2ee589;
-  --yg-light-green: #68d8a0;
-  --yg-yellow: #efbf14;
+  --st-green: #2ee589;
+  --st-light-green: #68d8a0;
+  --st-yellow: #efbf14;
 
-  --yg-charging-and-parking: #b11d94;
-  --yg-charging: #34d298;
-  --yg-parking: #5e53e1;
+  --st-charging-and-parking: #b11d94;
+  --st-charging: #34d298;
+  --st-parking: #5e53e1;
 
-  --yg-success: #48d04c;
-  --yg-error: #ee3c24;
-  --yg-warning: #ffa726;
-  --yg-info: #29b6f6;
+  --st-success: #48d04c;
+  --st-error: #ee3c24;
+  --st-warning: #ffa726;
+  --st-info: #29b6f6;
 
-  --yg-primary-300: #c0c0cb;
-  --yg-primary-200: #eaeaee;
+  --st-primary-300: #c0c0cb;
+  --st-primary-200: #eaeaee;
 
   /* --------------------------------------- */
 

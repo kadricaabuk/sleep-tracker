@@ -8,7 +8,7 @@ const STTabMenu = () => {
             <IonRouterOutlet>
                 <TabRoutes />
             </IonRouterOutlet>
-            <IonTabBar slot="bottom" style={{bacgroundColor: "#000", color: "#fff"}}>
+            <IonTabBar slot="bottom" style={{width: "100%"}}>
                 <Tabs />
             </IonTabBar>
         </IonTabs>
