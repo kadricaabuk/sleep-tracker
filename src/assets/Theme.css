@@ -1,0 +1,44 @@
+.ToggleSwitch {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ToggleSwitch input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+  .ToggleSwitch span {
+    position: relative;
+    height: 26px;
+    width: 52px;
+    border-radius: 26px;
+    background-color: #c0c0cb;
+    transition: all 0.1s ease-out;
+  }
+  .ToggleSwitch span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    display: block;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background-color: #fff;
+    transition: all 0.1s ease-out;
+  }
+  
+  .ToggleSwitch input[type="checkbox"]:checked + span {
+    background-color: #3d3c57;
+  }
+  .ToggleSwitch input[type="checkbox"]:checked + span::after {
+    transform: translate(25px, -50%);
+  }
+  
