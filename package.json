@@ -1,14 +1,21 @@
 {
-  "name": "yoga-app",
+  "name": "sleep-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@capacitor/app": "4.0.1",
+    "@capacitor/core": "4.2.0",
+    "@capacitor/haptics": "4.0.1",
+    "@capacitor/keyboard": "4.0.1",
+    "@capacitor/status-bar": "4.0.1",
     "@ionic/react": "^6.2.6",
+    "@ionic/react-router": "^6.2.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.3",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
@@ -36,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@capacitor/cli": "4.2.0"
   }
 }
